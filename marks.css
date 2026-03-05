@@ -1,0 +1,35 @@
+body {
+    background-image: url("https://tse1.mm.bing.net/th/id/OIP.Y_WJx0O9bSlpA4XxoX7p_QHaEc?pid=Api&P=0&h=180");
+            font-family: Arial;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .sec {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 5px;
+        }
+        .but{
+            padding: 8px 15px;
+            background: rgb(228, 230, 228);
+            color: rgb(0, 0, 0);
+            border: solid 2px green;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .but:hover{
+    background-color: rgb(0, 117, 16);
+   
+   box-shadow: 0 8px 15px rgb(10, 15, 84);
+      transform:scale(1.1);
+
+    border: 3px solid #027224;
+}

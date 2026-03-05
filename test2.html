@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Semester</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#141e30,#243b55);
+}
+
+.container{
+background:white;
+padding:40px;
+width:420px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+.container h2{
+margin-bottom:25px;
+font-size:26px;
+color:#333;
+}
+
+.sem-btn{
+display:block;
+width:100%;
+margin:12px 0;
+padding:12px;
+font-size:18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+.sem1{
+background:#4CAF50;
+color:white;
+text-decoration: none;
+}
+
+.sem3{
+background:#2196F3;
+color:white;
+}
+
+.sem4{
+background:#FF9800;
+color:white;
+}
+
+.sem-btn:hover{
+transform:scale(1.05);
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+text-decoration: none;
+}
+
+.footer{
+margin-top:20px;
+font-size:13px;
+color:gray;
+}
+a{
+text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Select Your Semester</h2>
+
+<a href="test3.html">
+<button class="sem-btn sem1">📘 1st& 2nd Semester</button>
+</a>
+
+<a href="test3.1.html">
+<button class="sem-btn sem3">📗 3rd Semester</button>
+</a>
+
+<a href="test4.html">
+<button class="sem-btn sem4">📙 4th Semester</button>
+</a>
+
+<div class="footer">
+<p>Choose your semester to access study materials</p>
+</div>
+
+</div>
+
+</body>
+</html>

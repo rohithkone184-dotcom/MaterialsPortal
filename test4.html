@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Subject</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+.container{
+background:white;
+width:420px;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+text-align:center;
+}
+
+.container h2{
+margin-bottom:25px;
+font-size:26px;
+color:#333;
+}
+
+select{
+width:100%;
+padding:12px;
+font-size:16px;
+border-radius:8px;
+border:2px solid #2196F3;
+outline:none;
+transition:0.3s;
+}
+
+select:hover{
+border-color:#4CAF50;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+background:#2196F3;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#1565c0;
+transform:scale(1.05);
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+.footer{
+margin-top:15px;
+font-size:13px;
+color:gray;
+}
+a{
+text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>📚 Select Your Subject</h2>
+
+<select id="subjects">
+<option value="">-- Choose Subject --</option>
+<option value="ds">1️⃣ Software Engineering</option>
+<option value="os">2️⃣ Computer Organization & Microprocessors</option>
+<option value="maths">3️⃣ Web Technologies</option>
+<option value="de">4️⃣ Computer Network & Cyber Security</option>
+<option value="dbms">5️⃣ Java Programming</option>
+</select>
+
+<button onclick="openSubject()">Open Subject</button>
+
+<div class="footer">
+<p>Select a subject to view study materials</p>
+</div>
+
+</div>
+
+<script>
+
+function openSubject(){
+
+let subject=document.getElementById("subjects").value;
+
+if(subject=="ds"){
+window.location.href="c:\\Users\\ROHITH\\Downloads\\Software Engineering.pdf";
+}
+else if(subject=="os"){
+window.location.href="c:\\Users\\ROHITH\\Downloads\\Computer Organization & Microprocessors.pdf";
+}
+else if(subject=="maths"){
+window.location.href="c:\\Users\\ROHITH\\Downloads\\Web Technologies.pdf";
+}
+else if(subject=="de"){
+window.location.href="c:\\Users\\ROHITH\\Downloads\\Computer Network & Cyber Security.pdf";
+}
+else if(subject=="dbms"){
+window.location.href="c:\\Users\\ROHITH\\Downloads\\Java Programming.pdf";
+}
+else{
+alert("Please select a subject");
+}
+
+}
+
+</script>
+
+</body>
+</html>
